@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatoral</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "while".
+
+        let numero = parseInt(prompt("Por favor, insira um número inteiro:"));
+        let fatorial = 1;
+        let contador = 1;
+
+        if (numero < 0 || isNaN(numero)) {
+        console.log("Por favor, insira um número inteiro positivo válido.");
+        } else {
+        while (contador <= numero) {
+        fatorial *= contador;
+        contador++;
+        }
+        console.log("O fatorial de", numero, "é:", fatorial);
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dígitos separados</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "for".
+
+        let numero = parseInt(prompt("Por favor, insira um número inteiro:"));
+        let numeroOriginal = numero;
+
+        console.log("Os dígitos do número", numeroOriginal, "são:");
+
+        for (; numero !== 0; numero = Math.floor(numero / 10)) {
+        let digito = numero % 10;
+        console.log(digito);
+        }
+
+
+    </script>
+</body>
+</html>

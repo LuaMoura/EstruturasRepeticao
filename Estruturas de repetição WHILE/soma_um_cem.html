@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de 1 a 100</title>
+</head>
+<body>
+    <script>
+
+        //Escreva um programa que calcule a soma dos números de 1 a 100 usando o loop "while".
+
+        let numeroInserido = parseInt(prompt("Por favor, insira um número:"));
+        let soma = 0;
+        let contador = 1;
+
+        while (contador <= 100) {
+        soma += numeroInserido + contador;
+        contador++;
+        }
+
+        console.log("A soma do número inserido com os números de 1 a 100 é:", soma);
+
+
+    </script>
+</body>
+</html>

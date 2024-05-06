@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Primo</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "for".
+
+        let numero = parseInt(prompt("Por favor, insira um número:"));
+        let primo = true;
+
+        for (let divisor = 2; divisor < numero; divisor++) {
+            if (numero % divisor === 0) {
+                primo = false;
+                break;
+            }
+        }
+
+        if (primo) {
+            console.log(numero, "é um número primo.");
+        } else {
+            console.log(numero, "não é um número primo.");
+        }
+
+
+    </script>
+</body>
+</html>

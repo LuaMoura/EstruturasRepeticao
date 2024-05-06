@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "for".
+
+        let numero = parseInt(prompt("Insira um número: "));
+        let a = 0, b = 1;
+        let resultado = a;
+
+        for (; resultado <= numero;) {
+            console.log(resultado);
+            resultado = a + b;
+            a = b;
+            b = resultado;
+        }
+
+
+    </script>
+</body>
+</html>
